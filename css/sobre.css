@@ -1,0 +1,13 @@
+.sobre {
+    background: #EAF2FD;
+}
+
+.sobre__descricao, .sobre__imagem {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre__descricao {
+        width: 70%;
+    }
+}
