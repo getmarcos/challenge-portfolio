@@ -38,8 +38,10 @@
     border: none;
     color: #464646;
     display: flex;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
+    padding-top: .25rem;
     width: 100%;
 }
 
@@ -48,6 +50,16 @@
     color: #FFFFFF;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.erro {
+    color: #464646;
+    background: url(../img/exclamacao.svg) no-repeat;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    transition: all .2s;
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
