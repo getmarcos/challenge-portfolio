@@ -17,6 +17,7 @@
     background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0 1px 0 0 #C8C8C8;
+    margin-bottom: .3rem;
     margin-top: 2rem;
     padding: .75rem .5rem;
 }
@@ -25,9 +26,9 @@
     border-bottom: 3px solid #2A7AE4;
 }
 
-.contato__campo:has(.contato__input:focus) .contato__label {
+/*.contato__campo:has(.contato__input:focus) .contato__label {
     color: #2A7AE4;
-}
+}*/
 
 .contato__label {
     color: #A2A2A2;
@@ -53,12 +54,10 @@
 }
 
 .erro {
+    display: block;
     color: #464646;
-    background: url(../img/exclamacao.svg) no-repeat;
+    font-size: .8rem;
     font-weight: 700;
-    margin-top: 1.5rem;
-    padding-left: 1.5rem;
-    transition: all .2s;
     width: 100%;
 }
 

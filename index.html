@@ -221,23 +221,26 @@
         <p class="contato__descricao">Preencha o formulário ao lado e entrarei em
           contato o mais rápido possível.</p>
         <form class="contato__formulario">
-          <div class="mensagem"></div>
           <fieldset class="contato__campo">
             <label for="nome" class="contato__label">Nome</label>
             <input type="text" class="contato__input" id="nome" required>
           </fieldset>
+          <span class="mensagem__erro"></span>
           <fieldset class="contato__campo">
             <label for="e-mail" class="contato__label">E-mail</label>
             <input type="email" class="contato__input" id="e-mail" required>
           </fieldset>
+          <span class="mensagem__erro"></span>
           <fieldset class="contato__campo">
             <label for="assunto" class="contato__label">Assunto</label>
             <input type="text" class="contato__input" id="assunto" required>
           </fieldset>
+          <span class="mensagem__erro"></span>
           <fieldset class="contato__campo">
             <label for="mensagem" class="contato__label">Mensagem</label>
             <textarea type="text" rows="2" class="contato__input" id="mensagem" required></textarea>
           </fieldset>
+          <span class="mensagem__erro"></span>
           <input type="submit" class="contato__botao botao" id="enviar" value="Enviar mensagem">
         </form>
       </div>
@@ -249,5 +252,4 @@
   </footer>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
-
 </html>
