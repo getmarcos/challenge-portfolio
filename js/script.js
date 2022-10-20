@@ -49,7 +49,7 @@ inputs[3].addEventListener('input', () => {
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].value == ""){
+        if (inputs[i].value == "") {
             setErro(i, spans[i], `Campo ${nomesInputs[i]} é obrigatório.`);
         }
     }
@@ -68,3 +68,5 @@ function removeErro(index, span) {
     inputs[index].parentElement.style.borderBottom = '3px solid #2A7AE4';
     inputs[index].previousElementSibling.color = '#2A7AE4';
 }
+
+console.log('Meu programa');
