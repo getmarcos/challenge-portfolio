@@ -26,9 +26,21 @@
     border-bottom: 3px solid #2A7AE4;
 }
 
-/*.contato__campo:has(.contato__input:focus) .contato__label {
-    color: #2A7AE4;
-}*/
+.contato__campo--valido {
+    border-bottom: 3px solid #2A7AE4;
+}
+
+.contato__campo--invalido {
+    border-bottom: 3px solid #E63636;
+}
+
+.mensagem__erro {
+    position: absolute;
+    margin-top: 1.3rem;
+    color: #464646;
+    font-size: .8rem;
+    font-weight: 700;
+}
 
 .contato__label {
     color: #A2A2A2;
@@ -55,9 +67,6 @@
 
 .erro {
     display: block;
-    color: #464646;
-    font-size: .8rem;
-    font-weight: 700;
     width: 100%;
 }
 
