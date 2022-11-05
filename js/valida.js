@@ -11,10 +11,7 @@ export function valida(input) {
   }
 }
 
-const tiposDeErro = [
-  "valueMissing",
-  "typeMismatch",
-];
+const tiposDeErro = ["valueMissing", "typeMismatch", "patternMismatch"];
 
 const mensagensDeErro = {
   nome: {
@@ -22,7 +19,8 @@ const mensagensDeErro = {
   },
   email: {
     valueMissing: "Campo e-mail é obrigatório.",
-    typeMismatch: "Informe um endereço de e-mail válido. Exemplo: seuemail@dominio.com.",
+    typeMismatch: "Informe um endereço de e-mail válido.",
+    patternMismatch: "Exemplo de e-mail válido: seuemail@dominio.com.",
   },
   assunto: {
     valueMissing: "Campo assunto é obrigatório.",
@@ -34,8 +32,9 @@ const mensagensDeErro = {
 
 function mostraMensagem(tipoDeInput, input) {
   let mensagem = "";
-  tiposDeErro.forEach(erro => {
+  tiposDeErro.forEach((erro) => {
     if (input.validity[erro]) {
+      // Se erro for true no input, faça:
       mensagem = mensagensDeErro[tipoDeInput][erro];
     }
   });

@@ -108,7 +108,7 @@
             </li>
           </ul>
         </div>
-        <img src="img/home.jpg" class="home__imagem--maior" alt="" />
+        <img src="https://github.com/omarcosallan.png" class="home__imagem--maior" alt="" />
       </section>
       <section class="sobre container" id="sobre">
         <h3 class="titulo">Sobre mim</h3>
@@ -390,6 +390,7 @@
                 class="contato__input"
                 id="e-mail"
                 data-tipo="email"
+                pattern="^[A-Za-z0-9](([_.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*)([.][A-Za-z]{2,4})$"
                 required
               />
               <span class="mensagem__erro"></span>
@@ -408,14 +409,15 @@
             </div>
             <div class="contato__campo">
               <label for="mensagem" class="contato__label">Mensagem</label>
-              <input
+              <textarea
                 type="text"
                 class="contato__input"
                 id="mensagem"
+                rows="2"
                 maxlength="300"
                 data-tipo="mensagem"
                 required
-              ></input>
+              ></textarea>
               <span class="mensagem__erro"></span>
             </div>
             <input

@@ -26,6 +26,10 @@
     border-bottom: 3px solid #2A7AE4;
 }
 
+.contato__campo:has(.contato__input:focus) .contato__label {
+    color: #2A7AE4;
+}
+
 .contato__campo--valido {
     border-bottom: 3px solid #2A7AE4;
 }
@@ -63,11 +67,6 @@
     color: #FFFFFF;
     margin-top: 2rem;
     cursor: pointer;
-}
-
-.erro {
-    display: block;
-    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
