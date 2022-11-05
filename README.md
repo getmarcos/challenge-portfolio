@@ -14,7 +14,7 @@ Challenge Front-End, promovido pela Alura + ONE, onde é criado o meu Portfólio
 <br>
 
 <p align="center">
-  <img alt="portfolio alura" src=".github/capa.jpg" width="100%">
+  <img alt="portfolio alura" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
